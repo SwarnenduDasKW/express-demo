@@ -1,0 +1,31 @@
+GET http://localhost:3000/messages
+
+###
+
+GET http://localhost:3000/messages/MOV30521
+
+###
+
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+    "roomid":"NEWROOM",
+    "roomname":"New Room",
+    "roomadmin":"Admin"
+}
+
+###
+
+DELETE http://localhost:3000/messages/NEWROOM
+
+###
+
+PATCH http://localhost:3000/messages/NEWROOM
+Content-Type: application/json
+
+{
+    "roomid":"OLDROOM",
+    "roomname":"Old Room",
+    "roomadmin":"Bunty"
+}
